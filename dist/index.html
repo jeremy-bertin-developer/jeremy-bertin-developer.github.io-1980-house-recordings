@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<?php
+  $file_last_mod_time = filemtime(__FILE__);
+
+  $content_last_mod_time = 1520949851;
+
+  $etag = '"' . $file_last_mod_time . '.' . $content_last_mod_time . '"';
+
+  header('Cache-Control: max-age=31536000');
+
+
+  header('ETag: ' . $etag);
+
+  if(isset($_SERVER['HTTP_IF_NONE_MATCH'])) {
+
+	   if($_SERVER['HTTP_IF_NONE_MATCH'] == $etag) {
+		     header('HTTP/1.1 304 Not Modified', true, 304);
+		       exit();
+	}
+}
+
+?>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142776241-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142776241-1');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRMJZQ2');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="google-site-verification" content="uojho_13e7O3jk65boOHwmw-H2nyCnROChqGA1avr_c" />
+  <meta http-equiv="Cache-control" content="public" max-age="31536000">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="keywords" content="House Music Label Recordings 1980">
+  <meta name="description" content="French House Music label based in Asutria, Vienna.">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="responsive.css"> -->
+  <link rel="icon" href="../icon/logo.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>1980 House Recordings</title>
+</head>
+
+<body class="w-screen">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRMJZQ2" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+
+    <button class="btn navbar-toggler cf collapsed" type="button" data-toggle="collapse" data-target="#myNavbar"
+      aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+
+    <div class="inline-block">
+      <img src="../images/logo.png" class="align-top main-logo float-left" alt="Logo from 1980 House Recordings">
+      <h1 class="navbar-brand ml-3 mt-2 text-white font-weight-light">1980 House Recordings.</h1>
+    </div>
+
+    <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link nav-clic m-2  px-3" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-clic m-2 px-3" href="#releases">Releases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-clic m-2 px-3" href="#artists">Artists</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-clic m-2 px-3" href="#partners">Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-clic m-2 px-3" href="#about-us">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-contact-us m-2 px-3" href="#contact-us">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="index">
+    <div class="container-fluid" role="img" aria-label="New York City from the top">
+      <div class="row">
+        <div class="card-overlay col">
+          <div class="container">
+            <div class="text-white text-center index-text">
+              <h2 class="card-title">Welcome</h2>
+              <h2 class="card-title">to</h2>
+              <h2 class="card-title">1980</h2>
+              <h2 class="card-title">House</h2>
+              <h2 class="card-title">Recordings</h2>
+              <p lass="card-title">&copy; Adrien Catel Photography</p>
+              <div class="card-body">
+                <a href="#home" class="button-index">Click here to see more</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="home" class="container-fluid inline-block page lazy-container">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel1">
+          <img src="../images/carousel1.jpg" class="d-block w-100 banner" alt="New York City">
+          <div class="carousel-caption">
+            <h2 class="text-left">Strictly House.</h2>
+            <p class="text-left">&copy; Adrien Catel Photography</p>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel2">
+          <img src="../images/carousel2.jpg" class="d-block w-100 banner" alt="New York City">
+          <div class="carousel-caption">
+            <h2 class="text-left">More Music.</h2>
+            <p class="text-left">&copy; Adrien Catel Photography</p>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel3">
+          <img src="../images/carousel3.jpg" class="d-block w-100 banner" alt="New York City">
+          <div class="carousel-caption">
+            <h2 class="text-left">Underground.</h2>
+            <p class="text-left">&copy; Adrien Catel Photography</p>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel4">
+          <img src="../images/carousel4.jpg" class="d-block w-100 banner" alt="New York City">
+          <div class="carousel-caption">
+            <h2 class="text-left">Authentic.</h2>
+            <p class="text-left">&copy; Adrien Catel Photography</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="black-divider"></div>
+    <div class="heading">
+      <h2 class="text-center">Latest Premiere</h2>
+    </div>
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"> NEXT RELEASE !</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Coming Februar 7th 2020 Exclusive Traxsource
+              </br> (2 Weeks later on all online shops)<p>
+                <p>1HR0362020</p>
+                <p>So What EP</p>
+                <p>BNinjas</p>
+                <iframe class="modal-iframe" scrolling="no" frameborder="no" allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/734536960&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container premiere shadow mb-5 bg-white rounded" style="height: 100%;">
+      <div class="row">
+        <div class="col-md-6">
+          <img data-src="../images/kag-trinity.jpg" class="card-img"
+            alt="Cover release with New York City in background">
+        </div>
+        <div class="col-md-6 premiere-text">
+          <h5>Moskalus</h5>
+          <p>What Im Saying by Kag Trinity</p>
+          <p>Out on Traxsource exclusive November 29th 2019</p>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/716029402&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container premiere shadow mb-5 bg-white rounded" style="height: 100%;">
+      <div class="row">
+        <div class="col-md-6">
+          <img data-src="../images/kag-trinity.jpg" class="card-img"
+            alt="Cover release with New York City in background">
+        </div>
+        <div class="col-md-6 premiere-text">
+          <h5>Analog Advisory</h5>
+          <p>Taboo by Kag Trinity</p>
+          <p>Out on Traxsource exclusive November 29th 2019</p>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/713035486&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container premiere shadow mb-5 bg-white rounded" style="height: 100%;">
+      <div class="row">
+        <div class="col-md-6">
+          <img data-src="../images/kag-trinity.jpg" class="card-img"
+            alt="Cover release with New York City in background">
+        </div>
+        <div class="col-md-6 premiere-text">
+          <h5>Imported Paris</h5>
+          <p>Chronic Break by Kag Trinity</p>
+          <p>Out on Traxsource exclusive November 29th 2019</p>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/702328078&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container premiere shadow mb-5 bg-white rounded" style="height: 100%;">
+      <div class="row">
+        <div class="col-md-6">
+          <img data-src="../images/kag-trinity.jpg" class="card-img"
+            alt="Cover release with New York City in background">
+        </div>
+        <div class="col-md-6 premiere-text">
+          <h5>House Salad Music</h5>
+          <p>James by Kag Trinity</p>
+          <p>Out on Traxsource exclusive November 29th 2019</p>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/697037812&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="black-divider"></div>
+
+  </section>
+
+  <section id="releases" class="page container-fluid inline-block">
+
+
+    <div class="header-image container-flex">
+      <img data-src="../images/releases-header.jpg" class="d-block w-100" alt="New York City in background">
+      <h2 class="text-left">Releases.</h2>
+      <p class="text-left">&copy; Adrien Catel Photography</p>
+    </div>
+
+    <div class="container-flex row releases-container">
+      <div class="card col-xl-3 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/kag-trinity.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Chronic Break EP</h4>
+          <p class="card-text">Kag Trinity</p>
+          <h5>1HR0352019</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/701996962&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/releases" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow"> </a>
+          <a href="https://www.traxsource.com/title/1232007/chronic-break-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow"> </a>
+          <a href="https://www.beatport.com/release/chronic-break-ep/2768670" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-3 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/va-remixes-2018.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Various Artist Remixes</h4>
+          <p class="card-text">Gzz, Lotche, Keedo, & My Mother Say</p>
+          <h5>1HR0342018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/511436058&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/va-remixes-2" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow"> </a>
+          <a href="https://www.traxsource.com/label/33371/1980-house-recordings" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow"> </a>
+          <a href="https://www.beatport.com/label/1980-house-recordings/63040" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-3 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/divagar.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Acid Leak EP</h4>
+          <p class="card-text">Divagar</p>
+          <h5>1HR0332018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/511397550&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/acid-leak-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/label/33371/1980-house-recordings" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/label/1980-house-recordings/63040" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-3 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/fizzikx.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">On My Mind EP</h4>
+          <p class="card-text">Fizzikx</p>
+          <h5>1HR0322018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/508807662&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/on-myd-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/label/33371/1980-house-recordings" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/label/1980-house-recordings/63040" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/james-brucke.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Ain't No Woman EP</h4>
+          <p class="card-text">James Brucke</p>
+          <h5>1HR0312018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/508514829&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/aint-no-woman-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/1062415/aint-no-woman-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/aint-no-woman-ep/2431224" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/vincent-de-bejarry.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Paris Brest EP</h4>
+          <p class="card-text">Vincent De Bejarry</p>
+          <h5>1HR0302018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/505351848&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/paris-brest-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/1053573/paris-brest-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/paris-brest-ep/2421178" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/wearing-shoes.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Downtown EP</h4>
+          <p class="card-text">Wearing Shoes</p>
+          <h5>1HR0292018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/470205915&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/downtown-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/1029975/downtown-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/downtown-ep/2380767" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/acg.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Placeholder EP</h4>
+          <p class="card-text">ACG</p>
+          <h5>1HR0282018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/470204775&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/placeholder-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/1024167/placeholder-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/placeholder-ep/2373322" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/gordigger.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Audio Collage EP</h4>
+          <p class="card-text">Gordigger ZDZX</p>
+          <h5>1HR0272018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/470203776&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/audio-collage-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/1018167/audi-collage-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/audi-collage-ep/2359598" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/morgasm.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Underwear EP</h4>
+          <p class="card-text">Morgasm</p>
+          <h5>1HR0262018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/470202615&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/underwear-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/1012412/underwear-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/underwear-ep/2348765" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/alfredo-avila.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Classico EP</h4>
+          <p class="card-text">Alfredo Avila</p>
+          <h5>1HR0252018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/470200818&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/classico-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/1009454/classico-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/classico-ep/2342420" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/lotche-beleu-ep.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Beleu EP</h4>
+          <p class="card-text">LOTCHE</p>
+          <h5>1HR0242018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/439698855&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/beleu-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/1000609/beleu-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/beleu-ep/2326910" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/another-jack.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">First Step EP</h4>
+          <p class="card-text">Another Jack</p>
+          <h5>1HR0232018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/439698420&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/first-step-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/993890/first-step-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/first-step-ep/2315495" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/dj-tchok.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Street Beats EP</h4>
+          <p class="card-text">Dj Tchok</p>
+          <h5>1HR0222018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/439697979&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/album/street-beats-ep" target="_blank"><img
+              data-src="../icon/bandcamp.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/987600/street-beats-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/street-beats-ep/2303496" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/loud-clasiizz.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">They Don't Know EP</h4>
+          <p class="card-text">Loud&Clasiizz</p>
+          <h5>1HR0212018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/439696737&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/972746/they-dont-know" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/they-dont-know/2291463" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/mhd.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Dusty EP</h4>
+          <p class="card-text">m0nster heart driver</p>
+          <h5>1HR0202018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422297724&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/966333/dusty-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/dusty-ep/2280928" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/bs-concept.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Devotion EP</h4>
+          <p class="card-text">B&S Concept</p>
+          <h5>1HR0192018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422294466&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/956995/devotion-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/devotion-ep/2269973" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/chuck-no-mr-wilson.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Pleasure Of Giving EP</h4>
+          <p class="card-text">Chuck No & Mr Wilson</p>
+          <h5>1HR0182018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422045865&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/952518/pleasure-of-giving" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/pleasure-of-giving/2259440" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/will-sonic-iner-radkevich.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Love Triangle EP</h4>
+          <p class="card-text">Will Sonic, Iner, Radkevich</p>
+          <h5>1HR0172018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/418250820&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/945052/love-triangle" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/love-triangle/2247021" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/ace-2017.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">ACE 2017 LP</h4>
+          <p class="card-text">Various Artists</p>
+          <h5>1HR0162018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/417532314&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/937852/ace-2017" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/ace-2017/2235258" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/pppl.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Syrups EP</h4>
+          <p class="card-text">PPPL</p>
+          <h5>1HR0152018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/404504082&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/931692/syrups" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/syrups/2224794" target="_blank"><img data-src="../icon/beatport.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/derek-djlo.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Forcella</h4>
+          <p class="card-text">Derek & Djlo</p>
+          <h5>1HR0142018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/394891287&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/922215/forcella" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/forcella/2207669" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/jeff-tuts.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">LCDFDGDN EP</h4>
+          <p class="card-text">Jeff Tuts aka La blanquette</p>
+          <h5>1HR0132018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/376526876&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/904666/la-cheffe-de-file-du-gang-des-nabots" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/la-cheffe-de-file-du-gang-des-nabots/2181974" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/bary-meelth.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Secret Tape EP</h4>
+          <p class="card-text">Bary Meelth</p>
+          <h5>1HR0122018</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/369921698&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=falsee"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/901878/secret-tape" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/secret-tape/2171800" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/stal-inc.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">The Blue Groove EP</h4>
+          <p class="card-text">Stal-Inc</p>
+          <h5>1HR0112017</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/359834399&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/892449/the-blue-groove" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/the-blue-groove/2155351" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/roanah.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Keep It Coming EP</h4>
+          <p class="card-text">Roanah</p>
+          <h5>1HR0102017</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/350093869&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/883188/keep-it-coming-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/keep-it-coming-ep/2139581" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/islyz.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">We Use To Play House EP</h4>
+          <p class="card-text">Islyz</p>
+          <h5>1HR0092017</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/346236824&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/870505/we-use-to-play-house-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/we-use-to-play-house-ep/2112985" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/4tek.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">To Da Rythm</h4>
+          <p class="card-text">4Tek</p>
+          <h5>1HR0082017</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/342875711&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/859408/to-da-rythm" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/to-da-rythm/2099145" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/gokiuchi.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Bandoosaka vol.1 EP</h4>
+          <p class="card-text">Gokiuchi</p>
+          <h5>1HR0072017</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/339427980&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/850481/bandoosaka-vol-1-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/bandoosaka-vol-1-ep/2084855" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/keedo.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Dedicated To The Lost Souls EP</h4>
+          <p class="card-text">Keedo</p>
+          <h5>1HR0062017</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/335777159&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/840795/dedicated-to-the-lost-souls" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/dedicated-to-the-lost-souls/2070816" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/deej.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">School Girl Report EP</h4>
+          <p class="card-text">Deej</p>
+          <h5>1HR0052017</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/313754293&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/829622/school-girl-report-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/school-girl-report-ep/2054855" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/onsmok.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Wright's Man Revenge EP</h4>
+          <p class="card-text">Onsmok</p>
+          <h5>1HR0042017</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/313754145&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/817993/wrights-man-revenge-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/wrights-man-revenge-ep/2039530" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/lotche-funkk.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Funkk EP</h4>
+          <p class="card-text">LOTCHE</p>
+          <h5>1HR0032017</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/313404834&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/808583/funkk-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/funkk-ep/2024076" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/gzz.jpg" class="card-img-top" alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Play The Fonktion EP</h4>
+          <p class="card-text">Gzz</p>
+          <h5>1HR0022017</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/309804025&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid  icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/797935/play-the-fonktion-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/play-the-fonktion-ep/2008984" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+
+      <div class="card col-xl-2 col-lg-4 col-md-12 col-12 border-0" style="width: 18rem;">
+        <img data-src="../images/and-my-mother-say.jpg" class="card-img-top"
+          alt="Cover release with New York City in background">
+        <div class="card-body">
+          <h4 class="card-title">Serie B EP</h4>
+          <p class="card-text">& My Mother Say</p>
+          <h5>1HR0012017</h5>
+          <iframe scrolling="no" frameborder="no" allow="autoplay"
+            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/306369761&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&show_artwork=false"></iframe>
+        </div>
+        <div class="container-fluid icon-list text-center">
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img data-src="../icon/bandcamp.png"
+              class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.traxsource.com/title/788182/serie-b-ep" target="_blank"><img
+              data-src="../icon/traxsource.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+          <a href="https://www.beatport.com/release/serie-b-ep/1998760" target="_blank"><img
+              data-src="../icon/beatport.png" class="hvr-pulse-grow" width="45" height="45"> </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grey-divider"></div>
+  </section>
+
+  <section id="artists" class="page container-fluid inline-block">
+
+    <div class="header-image">
+      <img data-src="../images/artists-header.jpg" class="d-block w-100" alt="New York City in background">
+      <h2 class="text-left">Artists.</h2>
+      <p class="text-left">&copy; Adrien Catel Photography</p>
+    </div>
+
+    <div class="container-flex">
+      <div class="row">
+        <!-- kag trinity -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/kag-trinity-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Kag Trinity">
+          <div class="card-body">
+            <h4 class="card-title">Kag Trinity</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/kag.trinity" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/kagtrinity" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+          </div>
+        </div>
+        <!-- divagar -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/divagar-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Divagar">
+          <div class="card-body">
+            <h4 class="card-title">Divagar</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/divaagaaaaar/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/divaagaaaaar" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- fizzikx -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/fizzikx-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Fizzikx">
+          <div class="card-body">
+            <h4 class="card-title">Fizzikx</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/Fizzikx-885730518168963/?__tn__=%2Cd%2CP-R&eid=ARBBxWW6caVJjt9s8lsQHQ2mPZEk7tpRAJGUp2o3nLLfIg-4aI9RnQdYbkowY3uWo3xcWIJ66j5BuNOR"
+              target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/joseph-kirk-5" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- jamesBrucke -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/james-brucke-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture James Brucke">
+          <div class="card-body">
+            <h4 class="card-title">James Brucke</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/jamesbruckeofficial/?eid=ARAofE2Gni38fu2yCil1Df5MpVd1I4923YJUxjVE4dln30bM9zmbu3JsbOLPmIIxRVTCQHYQeHhCJGOG&timeline_context_item_type=intro_card_work&timeline_context_item_source=100008740727716&fref=tag"
+              target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/james-br-cke" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- unDeux -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/un-deux-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture UN*DEUX">
+          <div class="card-body">
+            <h4 class="card-title">UN*DEUX</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/undeux1212/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/un-deux" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- vincentDeBejarry -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/vincent-de-bejarry-profile.jpg" class="rounded-circle artist-picture"
+            class="card-img-top" alt="Profile picture Vincent De Bejarry">
+          <div class="card-body">
+            <h4 class="card-title">Vincent De Bejarry</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/djvincentdebejarry/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/vincent-de-bejarry" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- wearingShoes -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/wearing-shoes-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Wearing Shoes">
+          <div class="card-body">
+            <h4 class="card-title">Wearing Shoes</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/wearingshoesmusic/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/wearingshoes" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- acg -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/acg-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture ACG">
+          <div class="card-body">
+            <h4 class="card-title">ACG</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <!-- <a href="https://www.facebook.com/wearingshoesmusic/" target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a> -->
+            <a href="https://soundcloud.com/open_sound" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- gorDigger -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/gordigger-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture GorDigger ZDZX" style="background-color: #000;">
+          <div class="card-body">
+            <h4 class="card-title">GorDigger ZDZX</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <!-- <a href="https://www.facebook.com/wearingshoesmusic/" target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a> -->
+            <a href="https://soundcloud.com/gordiggerr" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- morgasm -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/morgasm-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Morgasm">
+          <div class="card-body">
+            <h4 class="card-title">Morgasm</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/Morgasm-165948862182/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/morgasm" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- alfredoAvila -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/alfredo-avila-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Alfredo Avila">
+          <div class="card-body">
+            <h4 class="card-title">Alfredo Avila</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/AlfredoAvilaDJ/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/alfredoaviladj" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- anotherJack -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/another-jack-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Another Jack">
+          <div class="card-body">
+            <h4 class="card-title">Another Jack</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/AnotherJackMusic/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/anotherjack" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- djTchok -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/dj-tchok-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Dj Tchok">
+          <div class="card-body">
+            <h4 class="card-title">Dj Tchok</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/djtchok" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/djtchok" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- loudClasiizz -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/loud-clasiizz-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Loud & Clasiizz">
+          <div class="card-body">
+            <h4 class="card-title">Loud & Clasiizz</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/LoudClasiizz/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/loud-clasiizz" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- mhd -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/mhd-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture m0nster heart driver">
+          <div class="card-body">
+            <h4 class="card-title">m0nster heart driver</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <!-- <a href="https://www.facebook.com/LoudClasiizz/" target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a> -->
+            <a href="https://soundcloud.com/monster-heart-driver" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- bsConcept -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/bs-concept-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture B&S Concept">
+          <div class="card-body">
+            <h4 class="card-title">B&S Concept</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/BnSConcept/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/inaouse" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- chuckNo -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/chuck-no-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Chuck No">
+          <div class="card-body">
+            <h4 class="card-title">Chuck No</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/Chuck-No-685301268317237/" target="_blank"><img
+                class="icon rounded-circle" data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/chuck-no-532319390" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- mrWilson -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/mr-wilson-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Mr Wilson">
+          <div class="card-body">
+            <h4 class="card-title">Mr Wilson</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/MrWilsonProject/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/mrwilsonproject" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- willSonic -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/will-sonic-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Will Sonic">
+          <div class="card-body">
+            <h4 class="card-title">Will Sonic</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/djwillsonic/?ref=br_rs" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/willsonic" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- iner -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/iner-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Iner">
+          <div class="card-body">
+            <h4 class="card-title">Iner</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/inermusic/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/inervadim" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- radkevich -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/radkevich-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Radkevich">
+          <div class="card-body">
+            <h4 class="card-title">Radkevich</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <!-- <a href="https://www.facebook.com/inermusic/" target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a> -->
+            <a href="https://soundcloud.com/nastya-radkevich" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- pppl -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/pppl-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Pépé Elle (PPPL)">
+          <div class="card-body">
+            <h4 class="card-title">Pépé Elle (PPPL)</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/ppplprod/?__tn__=%2Cd%2CP-R&eid=ARAGtkdREJdT3wMsnjtPAGd72jkljS0Z-DyyephoysY42IFdE3DEJS-8Dopu-5sQ6DWvgQFDoDascNES"
+              target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/ppplprod" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- derekDjlo -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/derek-djlo-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Derek & DJLo">
+          <div class="card-body">
+            <h4 class="card-title">Derek & DJLo</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/Derek.DJLo.MusicPage/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/derek_and_djlo_music_page" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- jeffTuts -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/jeff-tuts-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Jeff Tuts / La Blanquette">
+          <div class="card-body">
+            <h4 class="card-title">Jeff Tuts / La Blanquette</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/jefflablanquette/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/arthur-eh" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- baryMeelth -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/bary-meelth-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Bary Meelth">
+          <div class="card-body">
+            <h4 class="card-title">Bary Meelth</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <!-- <a href="https://www.facebook.com/jefflablanquette/" target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a> -->
+            <a href="https://soundcloud.com/barymeelth" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- stalInc -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/stal-inc-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Stal-Inc">
+          <div class="card-body">
+            <h4 class="card-title">Stal-Inc</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/Stal-Inc-786627354797417/" target="_blank"><img
+                class="icon rounded-circle" data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/stal-inc" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- roanah -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/roanah-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture ROANAH">
+          <div class="card-body">
+            <h4 class="card-title">ROANAH</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/ROANAH-490722937779897/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/roanah" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- workerz -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/workerz-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Workerz">
+          <div class="card-body">
+            <h4 class="card-title">Workerz</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/workerzmusic/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/workerzmusic" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- islyz -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/islyz-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Islyz">
+          <div class="card-body">
+            <h4 class="card-title">Islyz</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/Islyz-840739602776424/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/disizislyz" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- tek4 -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/4tek-profile.jpg" class="rounded-circle artist-picture card-img-top"
+            alt="Profile picture 4Tek">
+          <div class="card-body">
+            <h4 class="card-title">4Tek</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/DJ4Tek/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/4tek" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- gokiuchi -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/gokiuchi-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Gokiuchi">
+          <div class="card-body">
+            <h4 class="card-title">Gokiuchi</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <!-- <a href="https://www.facebook.com/DJ4Tek/" target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a> -->
+            <a href="https://soundcloud.com/gokiuchi" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- keedo -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/keedo-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Keedo">
+          <div class="card-body">
+            <h4 class="card-title">Keedo</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <!-- <a href="https://www.facebook.com/DJ4Tek/" target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a> -->
+            <a href="https://soundcloud.com/keedokit" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- deej -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/deej-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Deej">
+          <div class="card-body">
+            <h4 class="card-title">Deej</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/deej248/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/dan-j-24" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- onsmok -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/onsmok-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture Onsmok">
+          <div class="card-body">
+            <h4 class="card-title">Onsmok</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/onsmokmusic/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/onsmok" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- flatWhiteChris -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/flat-white-chris-profile.jpg" class="rounded-circle artist-picture"
+            class="card-img-top" alt="Profile picture Flat White Chris">
+          <div class="card-body">
+            <h4 class="card-title">Flat White Chris</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <!-- <a href="https://www.facebook.com/onsmokmusic/" target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a> -->
+            <a href="https://soundcloud.com/flatwhitechris" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- jeanJacqueAka1980 -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/jean-jacques-aka-1980-profile.jpg" class="rounded-circle artist-picture"
+            class="card-img-top" alt="Profile picture Jean Jacques aka 1980">
+          <div class="card-body">
+            <h4 class="card-title">Jean Jacques aka 1980</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/jeanjacquesaka1980/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/jeanjacquesaka1980" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- lotche -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img class="rounded-circle artist-picture" data-src="../images/lotche-profile.jpg" class="card-img-top"
+            alt="Profile picture LOTCHE">
+          <div class="card-body">
+            <h4 class="card-title">LOTCHE</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/LOTCHECONTACT/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/lotche-1" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- gzz -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/gzz-profile.jpg" class="rounded-circle artist-picture" class="card-img-top"
+            alt="Profile picture GZZ">
+          <div class="card-body">
+            <h4 class="card-title">GZZ</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <!-- <a href="https://www.facebook.com/LOTCHECONTACT/" target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a> -->
+            <a href="https://soundcloud.com/julienguzzmusic" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+        <!-- andMyMotherSay -->
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-artist hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/and-my-mother-say-profile.jpg" class="rounded-circle artist-picture"
+            class="card-img-top" alt="Profile picture & My Mother Say">
+          <div class="card-body">
+            <h4 class="card-title">& My Mother Say</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/andmymothersay/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/andmymothersay" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <!-- <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a> -->
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="partners" class="page container-fluid inline-block">
+    <div class="header-image">
+      <img data-src="../images/partners-header.jpg" class="d-block w-100" alt="Under a bridge New York City">
+      <h2 class="text-left">Partners.</h2>
+      <p class="text-left">&copy; Adrien Catel Photography</p>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-partners hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/adrien-catel-profile.jpg" class="rounded-circle partners-picture"
+            class="card-img-top" alt="Profile picture Adrien Catel">
+          <div class="card-body">
+            <h4 class="card-title">Adrien Catel</h4>
+            <p>Photographer</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/adriencatell" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <!-- <a href="https://soundcloud.com/divaagaaaaar" target="_blank"><img class="icon rounded-circle" data-src="../icon/soundcloud.png"></a> -->
+            <a href="http://www.adriencastel.com/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/web.png"></a>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-partners hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/hsm.jpg" class="rounded-circle partners-picture" class="card-img-top"
+            alt="Logo House Salad Music">
+          <div class="card-body">
+            <h4 class="card-title">House Salad Music</h4>
+            <p>House Music Channel / House Music Label</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/adriencatell" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/housesaladmusic" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <a href="https://housesaladmusic.bandcamp.com/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/bandcamp.png"></a>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-partners hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/tomas-stofik-profile.jpg" class="rounded-circle partners-picture"
+            class="card-img-top" alt="Profile picture Tomas Stofik">
+          <div class="card-body">
+            <h4 class="card-title">Tomas Stofik</h4>
+            <p>Web Dev / Grafic Designer</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/facebook.png"></a>
+            <!-- <a href="https://soundcloud.com/divaagaaaaar" target="_blank"><img class="icon rounded-circle" data-src="../icon/soundcloud.png"></a> -->
+            <a href="#" target="_blank"><img class="icon rounded-circle" data-src="../icon/web.png"></a>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-partners hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../icon/analog-advisory-logo.jpg" class="rounded-circle partners-picture" class="card-img-top"
+            alt="Profile picture Analog Advisory representing a distord logo">
+          <div class="card-body">
+            <h4 class="card-title">Analog Advisory</h4>
+            <p>Music Channel</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/ANALOGADVISORY/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/analog-advisory" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <a href="http://analogadvisory.com/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/web.png"></a>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-partners hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../icon/imported.jpg" class="rounded-circle partners-picture" class="card-img-top"
+            alt="Profile picture Imported Paris representing a box">
+          <div class="card-body">
+            <h4 class="card-title">Imported Paris</h4>
+            <p>Label Records</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/ImportedParis/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/imported-recordings" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <a href="http://www.imported.fr/en" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/web.png"></a>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-partners hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../icon/houseum-logo.jpg" class="rounded-circle partners-picture" class="card-img-top"
+            alt="Profile picture Houseum representing a Japan cat">
+          <div class="card-body">
+            <h4 class="card-title">Houseum</h4>
+            <p>Label Records / Music Channel</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/houseum.yt/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/houseum" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <a href="https://www.youtube.com/channel/UC58C_BhzlZIJTeomuVSD2lA" target="_blank"><img
+                class="icon rounded-circle" data-src="../icon/web.png"></a>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-partners hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../images/moskalus-profile.jpg" class="rounded-circle partners-picture" class="card-img-top"
+            alt="Profile picture Moskalus">
+          <div class="card-body">
+            <h4 class="card-title">Moskalus</h4>
+            <p>Dj / Music Channel</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/Moskalus/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/moskalus" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <a href="https://www.youtube.com/channel/UC5rXILumTV11fEeq7nxWgOA" target="_blank"><img
+                class="icon rounded-circle" data-src="../icon/web.png"></a>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-partners hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../icon/novaj-logo.jpg" class="rounded-circle partners-picture" class="card-img-top"
+            alt="Profile picture novaj with a club in background">
+          <div class="card-body">
+            <h4 class="card-title">novaj 新し</h4>
+            <p>Label Records / Music Channel</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/Novaj-%E6%96%B0%E3%81%97-211604895935999/" target="_blank"><img
+                class="icon rounded-circle" data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/novajrec" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <a href="https://www.youtube.com/channel/UCgSC4NFr_xwN-lBfBbLqprw" target="_blank"><img
+                class="icon rounded-circle" data-src="../icon/web.png"></a>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-partners hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../icon/listen-closely-logo.jpg" class="rounded-circle partners-picture" class="card-img-top"
+            alt="Profile picture Listen Closely representing a shell">
+          <div class="card-body">
+            <h4 class="card-title">Listen Closely</h4>
+            <p>Music Channel</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/listencloselycollective/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/listencloselycollective" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <a href="https://www.youtube.com/channel/UCBote-U6HFHJV1UwLD3G5rw" target="_blank"><img
+                class="icon rounded-circle" data-src="../icon/web.png"></a>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-6 col-6 text-center card-partners hvr-underline-from-left"
+          style="width: 18rem;">
+          <img data-src="../icon/palm-structure.jpg" class="rounded-circle partners-picture" class="card-img-top"
+            alt="Profile picture PalmStructure representing a shadow of a revolutionary man ">
+          <div class="card-body">
+            <h4 class="card-title">PalmStructure</h4>
+            <p>Music Channel /Label Records</p>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="https://www.facebook.com/PalmStructure/" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/facebook.png"></a>
+            <a href="https://soundcloud.com/palmstructure" target="_blank"><img class="icon rounded-circle"
+                data-src="../icon/soundcloud.png"></a>
+            <a href="https://www.youtube.com/channel/UC38DkkefIq6oSJZtH6b8zrw" target="_blank"><img
+                class="icon rounded-circle" data-src="../icon/web.png"></a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us" class="page container-fluid inline-flex">
+    <div class="header-image">
+      <img data-src="../images/about-us-header.jpg" class="d-block w-100" alt="Metro New York City">
+      <h2 class="text-left">About us.</h2>
+      <p class="text-left">&copy; Adrien Catel Photography</p>
+    </div>
+
+    <div class="container-fluid background-about-us" role="img" aria-label="New York City from the top">
+      <div class="black-divider"></div>
+      <div class="container shadow heading bg-white">
+        <h2 class="text-center p-3 mb-2 bg-white text-dark">What they are saying</h2>
+      </div>
+
+      <div class="container shadow p-3 bg-white">
+        <div class="card bg-light mb-3 border-0">
+          <div class="card-body">
+            <h5 class="card-title about-header">"PPPL Ep is dope ! Thank youuuuuu !"</h5>
+            <p class="card-text text-right paragraph">- Laurent Garnier -</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container shadow p-3 bg-white">
+        <div class="card bg-light mb-3 border-0">
+          <div class="card-body">
+            <h5 class="card-title about-header">"Thanks for the bulky promo mail.
+              Checked em all out and diggin Jus Life from Loud&Classizz, and Full EP from another jack.
+              Others weren't bad but just less catering to my taste. Fav the EP from Another Jack. Top release that
+              one".</h5>
+            <p class="card-text text-right paragraph">- Khilaudio -</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container shadow p-3 bg-white">
+        <div class="card bg-light mb-3 border-0">
+          <div class="card-body">
+            <h5 class="card-title about-header">"Thanks guys, again a nice serie of Eps. My favorite goes for LOTCHE.
+              Full support !"</h5>
+            <p class="card-text text-right paragraph">- SFD -</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container shadow p-3 bg-white">
+        <div class="card bg-light mb-3 border-0">
+          <div class="card-body">
+            <h5 class="card-title about-header">"I like a lot "Riga Balsam" and "Love Triangle", both are really well
+              made !
+              Chuck No & Mr Wilson Ep is fat, my favorite is "Pleasure Of Giving" full support !
+              Full support also on MHD Ep. Beautiful mix between House and Micro."</h5>
+            <p class="card-text text-right paragraph">- Workerz -</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container shadow p-3 bg-white">
+        <div class="card bg-light mb-3 border-0">
+          <div class="card-body">
+            <h5 class="card-title about-header">"I know I'm in a fuckin delay for this... But love Derek & DJLo EP bro!
+              Will play in next podcasts and gigs for sure!"</h5>
+            <h5 class="card-title about-header">"Blurry - Stal-Inc is super nice! Will play it for sure!!! Thanks for
+              sending always quality music!"</h5>
+            <p class="card-text text-right paragraph">- Akyra -</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container shadow p-3 bg-white">
+        <div class="card bg-light mb-3 border-0">
+          <div class="card-body">
+            <h5 class="card-title about-header">"Bary Meelth Ep is beautiful ! I will play "Street Knowledge" ! Congrats
+              !"</h5>
+            <h5 class="card-title about-header">"Super quality EP ! I will play "Umeguys" for sure ! Thanks a lot !</h5>
+            <p class="card-text text-right paragraph">- UN*DEUX -</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container shadow p-3 bg-white">
+        <div class="card bg-light mb-3 border-0">
+          <div class="card-body">
+            <h5 class="card-title about-header">"Workerz remix for me ! Thanks !"</h5>
+            <h5 class="card-title about-header">"Good stuff as always, "Spinin (& My Mother Say Remix)" for me, support
+              "</h5>
+            <p class="card-text text-right paragraph">- HateLate -</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container shadow p-3 bg-white">
+        <div class="card bg-light mb-3 border-0">
+          <div class="card-body">
+            <h5 class="card-title about-header">"Thanks for the EP, love it. My favorite "Triple Loop""</h5>
+            <h5 class="card-title about-header">"Keedo Ep is very cool ! "Dedicated to the Lost Souls" is my favorite !"
+            </h5>
+            <p class="card-text text-right paragraph">- Around7 -</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container shadow p-3 bg-white">
+        <div class="card bg-light mb-3 border-0">
+          <div class="card-body">
+            <h5 class="card-title about-header">"Thanks for & My Mother Say EP, very nice !"</h5>
+            <p class="card-text text-right paragraph">- Iban Montoro -</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="black-divider"></div>
+      <div class="container shadow heading bg-white">
+        <h2 class="text-center p-3 mb-2 bg-white text-dark">What we are saying</h2>
+      </div>
+
+
+      <div class="container shadow p-3 bg-white questions">
+        <div class="card bg-light mb-3 border-0">
+          <div class="card-body">
+            <h5 class="card-title text-right">Who is 1980 House Recordings.</h5>
+            <p class="card-text">1980 House Recordings is a French music label based in Vienna, Austria.</p>
+            </br>
+            <h5 class="card-title text-right">1980.</h5>
+            <p class="card-text">Imagine that you are listening the radio, late night and you are waiting that they are
+              playing a track, that you don't know the name.
+              And when it played, you must be very fast first to press the record button and then write what the speaker
+              is saying. They are speaking very fast in general and chewing them words. No internet to check the
+              tracklist.
+              This is why 1980.</p>
+            </br>
+            <h5 class="card-title text-right">How artists can work with 1980 House Recordings.</h5>
+            <p class="card-text">It's not complicate at all but there is some steps to respect.
+              Artists can get in touch with the label by all platforms but it's very important to send private
+              soundcloud links.
+              Write a small presentation, no need for a roman.</p>
+            </br>
+            <h5 class="card-title text-right">Why a private soundcloud link.</h5>
+            <p class="card-text">Because the music that the artists are sending should not have been listened by too
+              many listeners
+              Some artists are sending the music to all labels in one single mail. "Authenticity" is a major key on the
+              music and on the attitude.
+              With that track (or those) that will give goose bumps, then it'S important to create the same surprise
+              effect and feeling to the listeners. It's all about "Love & Feelings".</p>
+            </br>
+            <h5 class="card-title text-right">"Underground", "More Music" and "Strictly House".</h5>
+            <p class="card-text">"Underground" is a really subjective word. A real underground music is completely out
+              of any system. Here "Underground"
+              means more "Not commercial" or "more deep", "more reflexise" it's very hard to define that sens and
+              feeling.
+              It's about being "humble" as well. There is a wish here to every single artists out there to get some kind
+              of notoriety but artists who are just arrogant
+              lazy and are looking like just for "fancyness", no way for them to work with 1980 House Rec. "More music"
+              because maybe right now you are bored to read all of this.
+              "Strictly House" is more about "No EDM" but the music can be at many borders. If the feeling is here,
+              let's go for it, no questions. Believing in the music and what the artists are puting in, is essential.
+            </p>
+            </br>
+            <h5 class="card-title text-right">What is the guarantee for the artists to work with 1980 House Recordings.
+            </h5>
+            <p class="card-text">For sure love. The label is still very young. The best that can be make is always done,
+              to put it more and more in front of the scene and at the same time, keeping the underground side.
+              It's not easy but worth to try. Hopefuly soon it will be possible to do more for all of the artists past
+              and future, because they all deserve.</p>
+            </br>
+            <h5 class="card-title text-right">What's next for the label.</h5>
+            <p class="card-text">Physical releases is a big dream of course. The website will be in permanent evolution.
+              Some stuff connect with the "business" side
+              of the Underground House Music world will be learn very soon. There is a wish to keep it underground but
+              with a nice professional way.
+              Believing in the dreams and trying to make them happen. Motivation and waking up early is apparently the
+              key.</p>
+            </br>
+            <p class="card-text text-center">Last word. Massive thanks and respect for all artists, supporter and
+              listeners.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+  <footer id="footer" class="container-fluid inline-flex">
+
+    <div class="row">
+      <div class="col-lg col-md-12 col-12 float-left" style="max-width: 450px;">
+        <p class="follow">Follow Us</p>
+        <div id="follow" class="btn-group justify-content-left" role="group" aria-label="Basic example">
+          <a href="https://www.facebook.com/1980-House-Recordings-261399917607139/" target="_blank"><img id="facebook"
+              class="icon hvr-float shadow" data-src="../icon/facebook-round.png"></a>
+          <a href="https://soundcloud.com/jeanjacquesaka1980" target="_blank"><img id="soundcloud"
+              class="icon hvr-float shadow" data-src="../icon/soundcloud-round.png"></a>
+          <a href="https://1980houserecordings.bandcamp.com/" target="_blank"><img id="bandcamp"
+              class="icon hvr-float shadow" data-src="../icon/bandcamp-round.png"></a>
+          <a href="https://www.traxsource.com/label/33371/1980-house-recordings" target="_blank"><img id="traxsource"
+              class="icon hvr-float shadow" data-src="../icon/traxsource-round.png"></a>
+          <a href="https://www.beatport.com/label/1980-house-recordings/63040" target="_blank"><img id="beatport"
+              class="icon hvr-float shadow" data-src="../icon/beatport-round.png"></a>
+          <!-- <a href="#" target="_blank"><img class="icon hvr-pulse-grow " data-src="../icon/juno-round.png"></a> -->
+          <!-- <a href="#" target="_blank"><img class="icon hvr-pulse-grow " data-src="../icon/itunes-round.png"></a> -->
+        </div>
+        <div class="footer-divider"></div>
+        <div id="footer-infos">
+          <p>&copy; 2017- 2019 / 1980 House Recordings</p>
+          <p>&copy; 1980 Web design</p>
+          <p>&copy; Adrien Catel Photography</p>
+        </div>
+        <div class="footer-divider"></div>
+        <img id="logo-footer" data-src="../images/logo.png" alt="...">
+        <!-- <div class="footer-divider2"></div>
+            <div class="footer-divider3"></div> -->
+      </div>
+      <div class="col-lg col-md-12 col-12 inline-block">
+        <div class="row">
+          <nav id="navbar-footer" class="navbar col">
+            <ul class="nav column navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link nav-clic2 hvr-bounce-to-right" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-clic2 hvr-bounce-to-right" href="#releases">Releases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-clic2 hvr-bounce-to-right" href="#artists">Artists</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-clic2 hvr-bounce-to-right" href="#partners">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-clic2 hvr-bounce-to-right" href="#about-us">About us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-lg col-md-12 col-12">
+        <div id="contact-us" class="row">
+          <div class="col-lg-12 col-lg-offset-1">
+            <form id="contact-form" method="post" action="../php/contact.php" role="form">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p>Contact us / Submit your music</p>
+                </div>
+                <div class="col-lg-12">
+                  <label class="text-white" for="subject">Subject <span>*</span></label>
+                  <input id="subject" type="text" name="subject" class="form-control" placeholder="Your subject">
+                  <p class="comments"></p>
+                </div>
+                <div class="col-lg-6">
+                  <label class="text-white" for="name">Name <span>*</span></label>
+                  <input id="name" type="text" name="name" class="form-control" placeholder="Your name">
+                  <p class="comments"></p>
+                </div>
+                <div class="col-lg-6">
+                  <label class="text-white" for="email">Email <span>*</span></label>
+                  <input id="email" type="text" name="email" class="form-control" placeholder="Your email">
+                  <p class="comments"></p>
+                </div>
+                <div class="col-lg-12">
+                  <label class="text-white" for="message">Message <span>*</span></label>
+                  <textarea id="message" type="text" name="message" class="form-control"
+                    placeholder="Your message. Please, send us only private soundcloud link" rows="6"></textarea>
+                  <p class="comments"></p>
+                </div>
+                <div class="col-lg-12">
+                  <p class="blue"><strong>* Required informations</strong></p>
+                </div>
+                <div class="col-lg-12">
+                  <input type="submit" class="button btn btn-block" placeholder="btn-lg" value="Send">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="jQuery.loadScroll.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
